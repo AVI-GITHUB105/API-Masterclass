@@ -1,306 +1,68 @@
-# React + Vite
+# API Masterclass 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+API Masterclass is an interactive, browser-based learning environment built to help developers master REST APIs without the hassle of setting up local backends or installing dependencies. It provides a split-pane "Zen Mode" IDE where users can write real Javascript or Python code, execute it directly in the browser, and interact with live endpoints (powered by FreeAPI).
 
-Currently, two official plugins are available:
+![Project Status](https://img.shields.io/badge/Status-Active-success)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
+- **In-Browser Execution**: Uses native `Function()` evaluation for JS and Pyodide (WebAssembly) for Python.
+- **Real HTTP Requests**: Test real endpoints with real methods (GET, POST, PUT, DELETE, PATCH).
+- **Curriculum Driven**: Progress through 6 modules ranging from Public APIs to Authentication and Ecommerce.
+- **Distraction-Free Zen Mode**: Lock into your coding session with a full-screen, immersive IDE experience.
+- **Dynamic Hints & Formatter**: Built-in `js-beautify` code formatter and context-aware hints that analyze your code as you type.
 
-## React Compiler
+## 🛠️ Tech Stack
+- **Frontend Framework**: React + Vite
+- **Styling**: Tailwind CSS
+- **Python Execution**: Pyodide
+- **Code Formatter**: js-beautify
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Getting Started
 
-## Expanding the Oxlint configuration
+If you want to run this project locally, follow these simple steps:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/api-masterclass.git
+   cd api-masterclass
+   ```
 
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-Here are short, punchy phrases you can use for your users, tailored exactly to gaming and fighter pilot vibes:
-## 🚀 To Start: Getting Ready / "Locking In"
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
 
-* "Check gear. We are locking in."
-* "Target acquired. Time to lock in."
-* "Flaps down. Prepare to lock in."
-* "We are going hot. Lock in."
-* "Comms clear. Let's lock in."
+4. Open your browser and navigate to `http://localhost:5173` (or the port provided by Vite).
 
-## 🛑 To Stop: Overheating / "Docking"
+## 🤝 Contributing
 
-* "We heated up too much. Let’s dock."
-* "Engines are cooking. Initiating docking procedure."
-* "Grinded too hard. RTB [Return to Base] and dock."
-* "System overload. Time to dock and vent."
-* "Too hot to handle. Let's dock and cool."
+We love open-source and welcome contributions from the community! Whether you are fixing a bug, adding a new API endpoint to the curriculum, or improving the UI, your help is appreciated.
 
-## 🎮 Short "One-Word" Alerts
+### 💡 Idea for Contribution: The "3-Strike" Progressive Hint System
+Currently, the hint system gives simple nudges. However, since the Terminal already handles basic API errors (like missing headers), a great community contribution would be to build an advanced, AST-parsing progressive hint system! 
 
-* "Status: Locked In. 🎯"
-* "Status: Docked. 🛋️"
+The idea is to provide exactly 3 escalating hints per endpoint:
+- **Hint 1 (Theory):** A theoretical hint using proper coding terminology (e.g., "Implement a callback function" or "Parse the response data").
+- **Hint 2 (Methods):** Directing the user to specific methods or keywords (e.g., use `.then()`, `.json()`, or `requests.get`).
+- **Hint 3 (Snippet):** A very limited, targeted code snippet for the exact line they are stuck on (not the entire solution).
+- *Users are strictly limited to 3 hint clicks per endpoint to prevent over-reliance.*
 
-If you want, I can:
+If this sounds like a fun challenge, feel free to fork the repo, build this feature, and submit a Pull Request!
 
-* Adapt these into system notifications or UI button text
-* Add more authentic fighter pilot slang (like "RTB" or "Bingo Fuel")
-* Create phrases for a specific video game genre (like FPS or Racing)
+Please see our [CONTRIBUTING.md](CONTRIBUTING.md) file for full details on how to get started, our code of conduct, and the pull request process.
 
-Let me know how you want to customize these phrases next!
+## 💡 Acknowledgements
+- **Curriculum & Endpoints**: Powered by the amazing [FreeAPI](https://freeapi.app/) project.
+- **Inspiration**: Inspired by "Chai aur Code" and the need for better interactive learning tools.
 
-Here are short, scannable phrases tailored specifically for a Zen-mode coding platform. They use gaming and aviation themes to transition users between deep focus and resting.
-## 💻 Entering Focus ("Locking In")
+## 📝 License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-* "Initializing deep focus. Locking in."
-* "Code mode active. Lock in."
-* "Clear the terminal. Time to lock in."
-* "Zero distractions. Locking in now."
-* "Prepare your workspace. We are locking in."
-
-## ☕ Taking a Break ("Docking")
-
-* "CPU is overheating. Let's dock."
-* "Grinded hard enough. Initiating docking procedure."
-* "Compile complete. Time to dock and recharge."
-* "Too many syntax errors. Dock and vent."
-* "System cool down. Let's dock."
-
-## 🔘 Minimalist UI Buttons / Status Toggles
-
-* "Mode: Locked In 🎯"
-* "Mode: Docked ⚓"
-
-If you want to refine these, let me know:
-
-* Where will these appear? (e.g., pop-up alerts, sidebar toggles, or loading screens)
-* Do you want the tone to be more mechanical/robotic or more peaceful/Zen?
-* Should I write a short welcome message explaining these modes to new users?
-
-Let me know how you would like to customize your website copy next!
-
-shadeer code You are given a task to integrate an existing React component in the codebase
-
-The codebase should support:
-- shadcn project structure  
-- Tailwind CSS
-- Typescript
-
-If it doesn't, provide instructions on how to setup project via shadcn CLI, install Tailwind or Typescript.
-
-Determine the default path for components and styles. 
-If default path for components is not /components/ui, provide instructions on why it's important to create this folder
-Copy-paste this component to /components/ui folder:
-```tsx
-shader-lines.tsx
-"use client"
-
-import { useEffect, useRef } from "react"
-
-declare global {
-  interface Window {
-    THREE: any
-  }
-}
-
-export function ShaderAnimation() {
-  const containerRef = useRef<HTMLDivElement>(null)
-  const sceneRef = useRef<{
-    camera: any
-    scene: any
-    renderer: any
-    uniforms: any
-    animationId: number | null
-  }>({
-    camera: null,
-    scene: null,
-    renderer: null,
-    uniforms: null,
-    animationId: null,
-  })
-
-  useEffect(() => {
-    // Load Three.js dynamically
-    const script = document.createElement("script")
-    script.src = "https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"
-    script.onload = () => {
-      if (containerRef.current && window.THREE) {
-        initThreeJS()
-      }
-    }
-    document.head.appendChild(script)
-
-    return () => {
-      // Cleanup
-      if (sceneRef.current.animationId) {
-        cancelAnimationFrame(sceneRef.current.animationId)
-      }
-      if (sceneRef.current.renderer) {
-        sceneRef.current.renderer.dispose()
-      }
-      document.head.removeChild(script)
-    }
-  }, [])
-
-  const initThreeJS = () => {
-    if (!containerRef.current || !window.THREE) return
-
-    const THREE = window.THREE
-    const container = containerRef.current
-
-    // Clear any existing content
-    container.innerHTML = ""
-
-    // Initialize camera
-    const camera = new THREE.Camera()
-    camera.position.z = 1
-
-    // Initialize scene
-    const scene = new THREE.Scene()
-
-    // Create geometry
-    const geometry = new THREE.PlaneBufferGeometry(2, 2)
-
-    // Define uniforms
-    const uniforms = {
-      time: { type: "f", value: 1.0 },
-      resolution: { type: "v2", value: new THREE.Vector2() },
-    }
-
-    // Vertex shader
-    const vertexShader = `
-      void main() {
-        gl_Position = vec4( position, 1.0 );
-      }
-    `
-
-    // Fragment shader
-    const fragmentShader = `
-      #define TWO_PI 6.2831853072
-      #define PI 3.14159265359
-
-      precision highp float;
-      uniform vec2 resolution;
-      uniform float time;
-        
-      float random (in float x) {
-          return fract(sin(x)*1e4);
-      }
-      float random (vec2 st) {
-          return fract(sin(dot(st.xy,
-                               vec2(12.9898,78.233)))*
-              43758.5453123);
-      }
-      
-      varying vec2 vUv;
-
-      void main(void) {
-        vec2 uv = (gl_FragCoord.xy * 2.0 - resolution.xy) / min(resolution.x, resolution.y);
-        
-        vec2 fMosaicScal = vec2(4.0, 2.0);
-        vec2 vScreenSize = vec2(256,256);
-        uv.x = floor(uv.x * vScreenSize.x / fMosaicScal.x) / (vScreenSize.x / fMosaicScal.x);
-        uv.y = floor(uv.y * vScreenSize.y / fMosaicScal.y) / (vScreenSize.y / fMosaicScal.y);       
-          
-        float t = time*0.06+random(uv.x)*0.4;
-        float lineWidth = 0.0008;
-
-        vec3 color = vec3(0.0);
-        for(int j = 0; j < 3; j++){
-          for(int i=0; i < 5; i++){
-            color[j] += lineWidth*float(i*i) / abs(fract(t - 0.01*float(j)+float(i)*0.01)*1.0 - length(uv));        
-          }
-        }
-
-        gl_FragColor = vec4(color[2],color[1],color[0],1.0);
-      }
-    `
-
-    // Create material
-    const material = new THREE.ShaderMaterial({
-      uniforms: uniforms,
-      vertexShader: vertexShader,
-      fragmentShader: fragmentShader,
-    })
-
-    // Create mesh and add to scene
-    const mesh = new THREE.Mesh(geometry, material)
-    scene.add(mesh)
-
-    // Initialize renderer
-    const renderer = new THREE.WebGLRenderer()
-    renderer.setPixelRatio(window.devicePixelRatio)
-    container.appendChild(renderer.domElement)
-
-    // Store references
-    sceneRef.current = {
-      camera,
-      scene,
-      renderer,
-      uniforms,
-      animationId: null,
-    }
-
-    // Handle resize
-    const onWindowResize = () => {
-      const rect = container.getBoundingClientRect()
-      renderer.setSize(rect.width, rect.height)
-      uniforms.resolution.value.x = renderer.domElement.width
-      uniforms.resolution.value.y = renderer.domElement.height
-    }
-
-    onWindowResize()
-    window.addEventListener("resize", onWindowResize, false)
-
-    // Animation loop
-    const animate = () => {
-      sceneRef.current.animationId = requestAnimationFrame(animate)
-      uniforms.time.value += 0.05
-      renderer.render(scene, camera)
-    }
-
-    animate()
-  }
-
-  return (
-    <div
-      ref={containerRef}
-      className="w-full h-full absolute" 
-    />
-  )
-}
-
-
-demo.tsx
-import { ShaderAnimation } from "@/components/ui/shader-lines";
-
-export default function DemoOne() {
-  return (
-    <div className="relative flex h-[650px] w-full flex-col items-center justify-center overflow-hidden rounded-xl">
-      <ShaderAnimation/>
-      <span className="pointer-events-none z-10 text-center text-7xl leading-none font-semibold tracking-tighter whitespace-pre-wrap text-white">
-        Shader Lines
-      </span>
-    </div>
-  )
-}
-```
-
-Implementation Guidelines
- 1. Analyze the component structure and identify all required dependencies
- 2. Review the component's argumens and state
- 3. Identify any required context providers or hooks and install them
- 4. Questions to Ask
- - What data/props will be passed to this component?
- - Are there any specific state management requirements?
- - Are there any required assets (images, icons, etc.)?
- - What is the expected responsive behavior?
- - What is the best place to use this component in the app?
-
-Steps to integrate
- 0. Copy paste all the code above in the correct directories
- 1. Install external dependencies
- 2. Fill image assets with Unsplash stock images you know exist
- 3. Use lucide-react icons for svgs or logos if component requires them
-
-
-https://api.github.com/users/AVI-GITHUB105
-
-
+---
+*Created by [AVI-GITHUB105](https://github.com/AVI-GITHUB105)*
