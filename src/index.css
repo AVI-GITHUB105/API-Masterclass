@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --color-zenSidebar: #0d1117;
+  --color-zenPanel: #161b22;
+  --color-zenAccent: #58a6ff;
+  --color-zenRun: #2ea043;
+  --color-zenRunHover: #3fb950;
+  --color-zenTerminal: #010409;
+  --color-zenText: #c9d1d9;
+  --color-zenMuted: #8b949e;
+  --color-zenBorder: #30363d;
+  --color-zenHover: #21262d;
+
+  --font-sans: Inter, sans-serif;
+  --font-mono: 'Fira Code', monospace;
+
+  --animate-shimmer: shimmer 1.5s infinite;
+  --animate-fade-in-up: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-pulse-glow: pulseGlow 3s infinite;
+  
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 15px rgba(88,166,255,0.4); }
+    50% { box-shadow: 0 0 30px rgba(88,166,255,0.8); }
+  }
+}
+
+/* Zen Mode Overrides */
+.theme-zen {
+  --color-zenAccent: #ff5722;
+  --color-zenRun: #d32f2f;
+  --color-zenRunHover: #f44336;
+  --color-zenSidebar: #000000;
+  --color-zenPanel: #0a0a0a;
+}
+.theme-zen .shadow-\[0_0_8px_rgba\(88\,166\,255\,0\.6\)\] {
+  box-shadow: 0 0 8px rgba(255,87,34,0.6);
+}
+
+body { margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #30363d; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #8b949e; }
+
+textarea:focus { outline: none; }
+.transition-all-slow { transition: all 0.3s ease; }
+
+.editor-container {
+    background-image: linear-gradient(to right, #0d1117 35px, transparent 35px);
+}
+
+/* Accordion transition classes */
+.accordion-content {
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+.accordion-content.expanded {
+    max-height: 3000px;
+    opacity: 1;
+}
+
+/* Prevent text selection during drag resize */
+.no-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
