@@ -26,8 +26,16 @@ export default function LandingPage({ onStartLearning, onGetCertified }) {
             <header className="fixed top-0 left-0 right-0 flex justify-between items-center p-4 lg:px-12 border-b border-zenBorder/50 bg-zenSidebar/90 backdrop-blur-md z-50">
                 <a href="#hero" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
                     <div className="w-8 h-8 rounded-lg bg-zenAccent/20 flex items-center justify-center border border-zenAccent/50 shadow-[0_0_15px_rgba(88,166,255,0.3)]">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-zenAccent" viewBox="0 0 20 20" fill="currentColor">
-                            <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-zenAccent" viewBox="0 0 24 24" fill="none" stroke="url(#logo-gradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <defs>
+                                <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stopColor="#38bdf8" />
+                                    <stop offset="100%" stopColor="#f97316" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M8 4H6a2 2 0 0 0-2 2v3a2 2 0 0 1-2 2 2 2 0 0 1 2 2v3a2 2 0 0 0 2 2h2" />
+                            <path d="M16 4h2a2 2 0 0 1 2 2v3a2 2 0 0 0 2 2 2 2 0 0 0-2 2v3a2 2 0 0 1-2 2h-2" />
+                            <path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 1 0 0-8c-2 0-4 1.33-6 4Z" />
                         </svg>
                     </div>
                     <span className="text-xl font-bold text-white tracking-tight">API Masterclass</span>

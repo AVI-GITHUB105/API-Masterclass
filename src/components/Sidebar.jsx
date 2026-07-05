@@ -48,13 +48,28 @@ export default function Sidebar({
             >
                 <div className="p-4 border-b border-zenBorder flex justify-between items-center">
                     <div>
+                    <div className="flex items-center gap-2">
+                        <div className="w-6 h-6 rounded bg-zenAccent/20 flex items-center justify-center border border-zenAccent/50 flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-zenAccent" viewBox="0 0 24 24" fill="none" stroke="url(#sidebar-logo-gradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <defs>
+                                    <linearGradient id="sidebar-logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stopColor="#38bdf8" />
+                                        <stop offset="100%" stopColor="#f97316" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M8 4H6a2 2 0 0 0-2 2v3a2 2 0 0 1-2 2 2 2 0 0 1 2 2v3a2 2 0 0 0 2 2h2" />
+                                <path d="M16 4h2a2 2 0 0 1 2 2v3a2 2 0 0 0 2 2 2 2 0 0 0-2 2v3a2 2 0 0 1-2 2h-2" />
+                                <path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 1 0 0-8c-2 0-4 1.33-6 4Z" />
+                            </svg>
+                        </div>
                         <h1 
-                            className="text-lg font-bold text-white tracking-wide cursor-pointer hover:text-zenAccent transition-colors"
+                            className="text-lg font-bold text-white tracking-wide cursor-pointer hover:text-zenAccent transition-colors truncate"
                             onClick={onGoToHome}
                             title="Go to Home"
                         >
                             API Masterclass
                         </h1>
+                    </div>
                         <p className="text-xs text-zenMuted mt-1">FreeAPI Modules</p>
                     </div>
                     {/* Close Sidebar Button */}
