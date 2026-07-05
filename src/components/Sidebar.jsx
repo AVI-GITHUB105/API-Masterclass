@@ -50,7 +50,7 @@ export default function Sidebar({
                     <div>
                     <div className="flex items-center gap-2">
                         <div className="w-6 h-6 rounded bg-zenAccent/20 flex items-center justify-center border border-zenAccent/50 flex-shrink-0">
-                            <img src="/logoapi-1.png" alt="API Masterclass Logo" className="w-4 h-4 object-contain" />
+                            <img src="/logoapi-1copy.png" alt="API Masterclass Logo" className="w-4 h-4 object-contain" />
                         </div>
                         <h1 
                             className="text-lg font-bold text-white tracking-wide cursor-pointer hover:text-zenAccent transition-colors truncate"

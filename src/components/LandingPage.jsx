@@ -26,7 +26,7 @@ export default function LandingPage({ onStartLearning, onGetCertified }) {
             <header className="fixed top-0 left-0 right-0 flex justify-between items-center p-4 lg:px-12 border-b border-zenBorder/50 bg-zenSidebar/90 backdrop-blur-md z-50">
                 <a href="#hero" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
                     <div className="w-8 h-8 rounded-lg bg-zenAccent/20 flex items-center justify-center border border-zenAccent/50 shadow-[0_0_15px_rgba(88,166,255,0.3)]">
-                        <img src="/logoapi-1.png" alt="API Masterclass Logo" className="w-5 h-5 object-contain" />
+                        <img src="/logoapi-1copy.png" alt="API Masterclass Logo" className="w-5 h-5 object-contain" />
                     </div>
                     <span className="text-xl font-bold text-white tracking-tight">API Masterclass</span>
                 </a>
