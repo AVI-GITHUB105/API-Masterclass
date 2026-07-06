@@ -361,10 +361,20 @@ export default function LandingPage({ onStartLearning, onGetCertified }) {
                         Created with passion by <a href="https://github.com/AVI-GITHUB105" target="_blank" rel="noopener noreferrer" className="text-zenAccent hover:underline font-semibold">AVI-GITHUB105</a>
                     </p>
                     
-                    <div className="mt-4 p-4 rounded-lg bg-zenSidebar/50 border border-zenBorder inline-block max-w-2xl">
-                        <p className="text-sm text-zenMuted/80">
-                            <strong>Special Thanks & Shoutout:</strong> This interactive playground utilizes the incredible API endpoints and learning curriculum designed by the <a href="https://freeapi.app/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-zenAccent underline">FreeAPI</a> project by <strong>Chai aur Code</strong>. Massive respect to their team for building the open-source backend that powers these exercises!
+                    <div className="mt-4 p-4 rounded-lg bg-zenSidebar/50 border border-zenBorder inline-block max-w-3xl text-left">
+                        <p className="text-sm text-zenMuted/80 mb-3">
+                            <strong>Special Thanks & Shoutouts:</strong>
                         </p>
+                        <ul className="text-sm text-zenMuted/80 space-y-3">
+                            <li className="flex items-start gap-2">
+                                <span className="text-zenAccent mt-1">✦</span>
+                                <span>This interactive playground utilizes the incredible API endpoints and learning curriculum designed by the <a href="https://freeapi.app/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-zenAccent underline font-semibold">FreeAPI</a> project by <strong>Chai aur Code</strong>. Massive respect to their team for building the open-source backend that powers these exercises!</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="text-[#00EA64] mt-1">✦</span>
+                                <span>The certification track proudly directs students to the official <a href="https://www.hackerrank.com/skills-verification/rest_api_intermediate" target="_blank" rel="noopener noreferrer" className="text-[#00EA64] hover:underline font-semibold">HackerRank REST API (Intermediate) Certificate</a>. Full credit and gratitude goes to HackerRank for providing this excellent industry-standard skills verification platform.</span>
+                            </li>
+                        </ul>
                     </div>
                     
                     <div className="mt-8 text-xs text-zenMuted/50">
