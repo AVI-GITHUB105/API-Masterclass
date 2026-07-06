@@ -212,6 +212,13 @@ export default function Curriculum({
                         );
                     })}
                 </div>
+                
+                {/* FreeAPI Footer Shoutout */}
+                <div className="mt-16 text-center border-t border-zenBorder/50 pt-8 pb-4">
+                    <p className="text-sm text-zenMuted/80">
+                        This interactive playground utilizes the incredible API endpoints and learning curriculum designed by the <a href="https://freeapi.app/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-zenAccent underline">FreeAPI</a> project by <strong>Chai aur Code</strong>.
+                    </p>
+                </div>
             </div>
         </div>
     );

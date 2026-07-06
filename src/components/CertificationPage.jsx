@@ -464,13 +464,20 @@ export default function CertificationPage({ onGoToHome }) {
                     </div>
                 </section>
 
-                <div className="text-center mt-12 pb-12">
+                <div className="text-center mt-12 pb-8">
                     <button 
                         onClick={onGoToHome}
-                        className="px-8 py-3 bg-zenSidebar border border-zenBorder hover:border-zenAccent hover:text-white text-zenMuted rounded-full transition-all duration-300"
+                        className="px-8 py-3 bg-zenSidebar border border-zenBorder hover:border-zenAccent hover:text-white text-zenMuted rounded-full transition-all duration-300 mb-12"
                     >
                         Return to Dashboard
                     </button>
+
+                    {/* HackerRank Footer Shoutout */}
+                    <div className="border-t border-zenBorder/50 pt-8">
+                        <p className="text-sm text-zenMuted/80 max-w-3xl mx-auto">
+                            The certification track proudly directs students to the official <a href="https://www.hackerrank.com/skills-verification/rest_api_intermediate" target="_blank" rel="noopener noreferrer" className="text-[#00EA64] hover:underline font-semibold">HackerRank REST API (Intermediate) Certificate</a>. Full credit and gratitude goes to HackerRank for providing this excellent industry-standard skills verification platform.
+                        </p>
+                    </div>
                 </div>
             </main>
         </div>
